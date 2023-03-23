@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import ReactDOM from 'react-dom';
+
 
 
 const TeamNames = [
@@ -4216,16 +4216,12 @@ function App() {
 
     <div>
       <Welcome />
-      {/* <TeamNamesList /> */}
       <TeamList />
+      {/* <TeamNamesList /> */}
     </div>
   );
 }
 
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('mountNode'),
-// );
 
 
 
