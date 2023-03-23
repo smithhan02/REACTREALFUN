@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\newMission12_hls68.props" />
+</Project>
