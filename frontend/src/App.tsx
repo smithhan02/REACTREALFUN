@@ -4167,8 +4167,6 @@ const TeamNames = [
   }
 ];
 
-
-
 function Welcome() {
   return (
     <div>
@@ -4177,12 +4175,7 @@ function Welcome() {
     </div>
   );
 }
-class Team extends React.Component<{
-  school: string;
-  name: string;
-  city: string;
-  state: string;
-}> {
+class Team extends React.Component<{ school: string; name: string; city: string; state: string; }> {
 
   render() {
     const oneTeam = this.props;
@@ -4204,31 +4197,28 @@ function TeamList() {
     <div>
       {TeamNames.map(oneTeam => <Team {...oneTeam} />)}
     </div>
-
   );
 }
 
-function TeamNamesList() {
-  return (
-    <div>
-      <h2>All Teams:</h2>
-      <ul>
-        {TeamNames.map(oneTeam => <li>{oneTeam.school}</li>)}
-      </ul>
-    </div>
-  );
-}
-
+// function TeamNamesList() {
+//   return (
+//     <div>
+//       <h2>All Teams:</h2>
+//       <ul>
+//         {TeamNames.map(oneTeam => <li>{oneTeam.school}</li>)}
+//       </ul>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
+
     <div>
       <Welcome />
-      <TeamNamesList />
+      {/* <TeamNamesList /> */}
       <TeamList />
     </div>
-
-
   );
 }
 
