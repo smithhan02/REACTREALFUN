@@ -4177,7 +4177,6 @@ function Welcome() {
     </div>
   );
 }
-
 class Team extends React.Component<{
   school: string;
   name: string;
@@ -4200,7 +4199,6 @@ class Team extends React.Component<{
   }
 }
 
-
 function TeamList() {
   return (
     <div>
@@ -4208,15 +4206,25 @@ function TeamList() {
     </div>
 
   );
-
 }
 
+function TeamNamesList() {
+  return (
+    <div>
+      <h2>All Teams:</h2>
+      <ul>
+        {TeamNames.map(oneTeam => <li>{oneTeam.school}</li>)}
+      </ul>
+    </div>
+  );
+}
 
 
 function App() {
   return (
     <div>
       <Welcome />
+      <TeamNamesList />
       <TeamList />
     </div>
 
