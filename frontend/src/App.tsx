@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 
 const TeamNames = [
@@ -4222,10 +4222,10 @@ function App() {
   );
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('mountNode'),
-);
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('mountNode'),
+// );
 
 
 
